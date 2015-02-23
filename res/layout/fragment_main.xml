@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.musicplayer.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/choose_file"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="61dp"
+        android:onClick="chooseFile"
+        android:text="Choose File" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/choose_file"
+        android:layout_marginTop="21dp"
+        android:enabled="false"
+        android:text="Play!" 
+        android:onClick="playMusic"/>
+
+     <Button
+         android:id="@+id/stop"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/choose_file"
+         android:layout_below="@+id/choose_file"
+         android:layout_marginTop="90dp"
+         android:enabled="false"
+         android:text="Pause!" 
+         android:onClick="pauseMusic"/>
+     
+
+</RelativeLayout>
